@@ -1,0 +1,24 @@
+.myself {
+    height: clamp(60vh, 75vh, 100vh); /* Dynamic height */
+    color: floralwhite;
+    background-size: clamp(100%, 120%, 180%) 115%; /* Responsive scaling */
+    background-position: center;
+    transition: all 0.5s;
+    margin: clamp(20px, 5vw, 30px) 0; /* Dynamic margins */
+}
+
+.myself-header {
+    margin-top: clamp(50px, 10vw, 100px); /* Dynamic top margin */
+    margin-bottom: clamp(30px, 5vw, 70px); /* Dynamic bottom margin */
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(20px, 3vw, 32px); /* Responsive heading font size */
+}
+
+pre {
+    font-size: clamp(14px, 2vw, 18px); /* Dynamic font size for JSON */
+    line-height: 1.6; /* Improves readability */
+    padding: clamp(10px, 2vw, 20px); /* Adds spacing around text */
+    white-space: pre-wrap; /* Wraps long text instead of overflowing */
+    word-break: break-word; /* Prevents long strings from breaking layout */
+}

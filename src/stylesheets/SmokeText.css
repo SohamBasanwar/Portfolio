@@ -1,0 +1,64 @@
+/* Container settings */
+.smoke-name {
+    display: flex;
+    gap: 8px;
+    font-size: clamp(20px, 6vw, 90px); /* Dynamically scales between 20px and 90px */
+    font-weight: bold;
+    position: relative;
+}
+
+.smoke-letter {
+    font-size: clamp(20px, 6vw, 90px); /* Dynamically scales with viewport */
+    color: transparent;
+    position: relative;
+    animation: reveal 3s ease forwards, colorfulSmoke 5s ease-in-out infinite;
+    opacity: 0;
+}
+
+/* Reveal effect */
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        color: transparent;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        color: white;
+        transform: translateX(0);
+    }
+}
+
+/* Colorful Smoke Animation */
+@keyframes colorfulSmoke {
+    0% {
+        text-shadow:
+                calc(-1.5vw) calc(1.5vw) calc(3vw) #ff4d4d,
+                calc(1.5vw) calc(-1.5vw) calc(3vw) #4d79ff,
+                calc(1.5vw) calc(1.5vw) calc(3vw) #ff4dff;
+    }
+    25% {
+        text-shadow:
+                calc(-2vw) calc(2vw) calc(4vw) #ffad33,
+                calc(2vw) calc(-2vw) calc(4vw) #33ffad,
+                calc(-1.5vw) calc(-1.5vw) calc(3vw) #ad33ff;
+    }
+    50% {
+        text-shadow:
+                calc(1.5vw) calc(-1.5vw) calc(3vw) #4dff4d,
+                calc(-1.5vw) calc(1.5vw) calc(3vw) #4d79ff,
+                calc(2.5vw) calc(-2.5vw) calc(5vw) #ffad33;
+    }
+    75% {
+        text-shadow:
+                calc(-2.5vw) calc(2.5vw) calc(5vw) #ff4dff,
+                calc(2.5vw) calc(-2.5vw) calc(5vw) #ff4d4d,
+                calc(-2vw) calc(-2vw) calc(4vw) #33ffad;
+    }
+    100% {
+        text-shadow:
+                calc(-1.5vw) calc(1.5vw) calc(3vw) #4d79ff,
+                calc(1.5vw) calc(-1.5vw) calc(3vw) #ff4dff,
+                calc(1.5vw) calc(1.5vw) calc(3vw) #ff4d4d;
+    }
+}

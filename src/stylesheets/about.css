@@ -1,0 +1,29 @@
+.about {
+    padding: clamp(5px, 1vw, 15px); /* Dynamic padding for better spacing */
+    font-weight: bold;
+    font-size: clamp(14px, 1.5vw, 18px); /* Responsive font size */
+}
+
+.about-container {
+    margin-top: clamp(20px, 3vw, 50px); /* Dynamic margin */
+    margin-bottom: clamp(20px, 3vw, 50px);
+    text-align: center;
+}
+
+.about-image img {
+    max-width: clamp(100%, 110%, 140%); /* Dynamically adjusts the image size */
+    height: auto; /* Maintains aspect ratio */
+    padding-right: clamp(10px, 5vw, 50px); /* Dynamic padding */
+}
+
+h2 {
+    font-size: clamp(24px, 4vw, 42px); /* Larger scaling for headings */
+    font-weight: bold;
+    margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+p {
+    font-size: clamp(14px, 1.4vw, 18px); /* Slightly larger scaling for paragraph text */
+    line-height: 1.6; /* Ensures readability */
+    margin: clamp(10px, 1vw, 20px) 0;
+}

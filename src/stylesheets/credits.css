@@ -1,0 +1,154 @@
+/* Back Button Styling */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    font-size: 2rem; /* Larger icon size */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    z-index: 10; /* Ensure it appears above everything else */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.back-icon {
+    font-weight: bold;
+}
+
+/* Header Section */
+.credits-header {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    background-size: cover; /* Stretch image to fit */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.credits-header {
+    position: relative;
+    height: 100vh; /* Full-screen height */
+    background-size: cover; /* Stretch image to fit */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Title Styling */
+.credits-title {
+    font-size: clamp(2rem, 5vw, 4rem); /* Flexible font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+    padding: 0 10px; /* Avoid text overflow */
+}
+
+/* Default styles for the image container */
+.responsive-image {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Large screens */
+.large-image {
+    background-image: url("../../public/images/CreditFinding.png");
+}
+
+/* Medium screens (tablets) */
+.medium-image {
+    background-image: url("../../public/images/CreditFinding_T.png");
+}
+
+/* Small screens (mobile) */
+.small-image {
+    background-image: url("../../public/images/CreditFinding_M.png");
+}
+
+
+/* Adjust Spacing and Content Layout */
+.credits-content {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin-top: -50px; /* Pull up the content closer to the header */
+}
+
+/* Credit Item Styling */
+.credit-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling for Credits */
+.credit-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.credit-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Links */
+.credit-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.credit-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .credits-header {
+        height: 80vh; /* Reduce header height */
+    }
+
+    .credits-title {
+        font-size: clamp(1.5rem, 4vw, 3rem); /* Smaller font size */
+    }
+
+    .credits-content {
+        margin-top: -30px; /* Reduce spacing further */
+    }
+}

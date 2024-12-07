@@ -1,0 +1,62 @@
+/* General Styles */
+.intro {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.smoke-name {
+    font-size: clamp(35px, 6vw, 100px); /* Dynamic scaling */
+    color: lightgrey;
+    font-weight: bold;
+    text-align: center;
+}
+
+.smoke-name:hover {
+    color: white;
+    text-shadow: 0 0 10px mediumpurple;
+    cursor: default;
+}
+
+#About {
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem); /* Dynamic font for paragraphs */
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.primary-button {
+    background-color: floralwhite;
+    font-size: clamp(0.75rem, 2vw, 1rem); /* Button font scales */
+    width: clamp(100px, 15vw, 200px); /* Button width scales */
+    height: clamp(35px, 5vw, 45px); /* Button height scales */
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Containers and Layouts */
+.intro-content {
+    font-size: clamp(0.9rem, 3vw, 1.2rem); /* Dynamic scaling */
+    color: white;
+}
+
+/* Flexbox Helper */
+.flex-with-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dynamic Margins, Padding */
+.container {
+    padding: clamp(10px, 3vw, 20px); /* Dynamic padding */
+    margin: clamp(5px, 2vw, 15px);  /* Dynamic margin */
+}

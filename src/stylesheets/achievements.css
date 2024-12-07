@@ -1,0 +1,115 @@
+/* Background Section */
+.ach-bc {
+    background-image: url("../../public/images/bobs.svg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ach-intro .primary-button{
+    background-color: white;
+    color: black;
+    border-color: darkmagenta;
+    width: 50%;
+    height: 40px;
+}
+
+/* Intro Section */
+#intro {
+    color: whitesmoke;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ach-intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Icons Styling */
+/*.ach-icons-left,*/
+/*.ach-icons-right {*/
+/*    position: relative;*/
+/*    flex: 1 1 auto;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+
+.rotation {
+    height: clamp(150px, 10vw, 200px); /* Dynamically adjust size */
+    width: clamp(150px, 10vw, 200px); /* Dynamically adjust size */
+    animation: achievements 8s linear infinite;
+}
+
+/* Achievements List Section */
+.ach-list {
+    overflow: hidden;
+    padding: clamp(20px, 5vw, 40px); /* Add padding around the list */
+    text-align: center;
+}
+
+.certification {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; /* Optional: Add a border for better separation */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px;
+    background-color: #f9f9f9; /* Optional: Light background */
+    flex-wrap: wrap; /* Ensure items stack on smaller screens */
+    margin-bottom: 20px;
+}
+
+/* Image Section */
+.ach-img {
+    padding: 20px;
+    flex: 1 1 100%; /* Full-width on smaller screens */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.default-certificate-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.ach-content {
+    padding: 20px;
+    flex: 1 1 auto; /* Ensure content adjusts dynamically */
+    text-align: left;
+}
+
+.ach-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ach-description {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #555; /* Optional: Slightly muted color for text */
+    line-height: 1.6;
+}
+
+/* Achievements Animation */
+@keyframes achievements {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}

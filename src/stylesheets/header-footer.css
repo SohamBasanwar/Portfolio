@@ -1,0 +1,222 @@
+.header__menu {
+    color: magenta;
+    font-size: 70px;
+    margin: 20px;
+    position: absolute;
+
+    z-index: 4;
+
+    cursor: pointer;
+
+
+}
+
+.show-header {
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: darkmagenta;
+    opacity: 0.90;
+    height: 65vh;
+    width: 50%;
+
+    border-bottom-left-radius: 50%;
+    transition: all 0.5s;
+
+    overflow: hidden;
+
+    z-index: 2;
+
+}
+
+ul li {
+    color: white;
+    list-style: none;
+
+    margin-top: 25px;
+
+}
+
+
+li:hover {
+    border: 3px solid mediumpurple;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+ a {
+    color: white;
+    text-decoration: none;
+}
+
+.hide-header {
+    color: white;
+    text-decoration: none;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 0;
+    width: 0;
+
+    transition: all 0.5s;
+}
+
+.active {
+    border: 3px solid mediumpurple;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.active a {
+    font-weight: bold;
+    color: mediumpurple;
+}
+
+/* Scoped Footer Styles */
+#footer {
+    background-color: black;
+    padding: clamp(20px, 5vw, 50px); /* Dynamic padding */
+    color: white;
+    text-align: center;
+}
+
+#footer .footer-content {
+    max-width: 800px; /* Center content and limit width */
+    margin: 0 auto;
+}
+
+#footer .footer-icons {
+    font-size: clamp(28px, 4.5vw, 32px);; /* Dynamic icon size */
+    color: white;
+    /*margin: 0 clamp(10px, 2vw, 20px); !* Dynamic margin for spacing *!*/
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#footer .footer-icons:hover {
+    color: magenta; /* Hover effect color */
+    transform: scale(1.5); /* Enlarge on hover */
+}
+
+#footer .author {
+    margin-top: clamp(20px, 5vw, 40px); /* Dynamic spacing */
+    font-size: clamp(14px, 1.5vw, 18px); /* Dynamic text size */
+}
+
+#footer hr {
+    border: 0;
+    height: 1px;
+    background: floralwhite; /* Subtle divider color */
+    margin: clamp(10px, 2vw, 20px) 0;
+}
+
+#footer p {
+    margin: 0;
+    font-size: clamp(14px, 1.2vw, 16px); /* Responsive paragraph size */
+}
+
+#footer .social-icons {
+    margin-top: clamp(20px, 5vw, 30px); /* Space between icons and top content */
+    display: flex;
+    gap: clamp(50px, 20vw, 150px); /* Dynamic gap between icons */
+    justify-content: center;
+}
+
+.author-details {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
+    gap: 10px;              /* Adds space between elements */
+    font-size: 1rem;        /* Adjust font size as needed */
+    color: white;
+}
+
+.author-details .separator {
+    margin: 0 5px; /* Adds space around the vertical bar */
+    color: white;   /* Adjust color for the separator */
+}
+
+.author-details a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.author-details a:hover {
+    color: #0056b3; /* Link hover color */
+}
+
+@media (max-width: 750px) {
+    .show-header {
+        color: white;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        background-color: darkmagenta;
+        opacity: 0.90;
+        height: 85vh;
+        width: 85%;
+
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        border-left: 3px solid darkmagenta;
+        transition: width 0.5s;
+
+        z-index: 2;
+
+    }
+
+    .hide-header {
+        color: white;
+        text-decoration: none;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 0;
+        width: 0;
+
+        transition: width 0.2s;
+    }
+
+    .header__menu {
+        color: magenta;
+        font-size: 50px;
+    }
+
+}

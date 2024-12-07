@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  background-color: white;
+
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-with-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.kaushan-script {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.n-box1 {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #5f1986, #501571);
+  box-shadow:  5px 5px 10px #240933,
+  -5px -5px 10px #8e25c7;
+}
+
+.n-box2 {
+  border-radius: 40px;
+  background: linear-gradient(145deg, magenta, darkmagenta);
+  box-shadow:  5px 5px 10px #6f3770,
+  -5px -5px 10px darkmagenta;
+  padding: clamp(15px, 2vw, 30px); /* Adjust box padding dynamically */
+  font-size: clamp(14px, 1.5vw, 16px); /* Font size inside boxes */
+  line-height: 1.6; /* Improved readability */
+}

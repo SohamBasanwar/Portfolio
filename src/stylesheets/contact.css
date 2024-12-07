@@ -1,0 +1,110 @@
+/* Contact Section */
+.contact {
+    padding: 50px 20px; /* Add consistent padding around the section */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px; /* Space between form and image */
+}
+
+/* Form Container */
+#contact {
+    padding: 30px;
+    margin: 10px 0;
+    max-width: 600px; /* Restrict width for the form */
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Increased border-radius for smoother edges */
+    width: 100%;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+    border-color: #777;
+    transform: scale(1.02);
+    outline: none;
+}
+
+
+/* Submit Button */
+#contact button {
+    margin-top: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: magenta;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+#contact button:hover {
+    background-color: darkmagenta;
+    transform: scale(1.05);
+}
+
+/* Contact Image */
+.contact img {
+    max-height: 70vh; /* Adjust image height for better alignment */
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Row Layout */
+.contact .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+    margin: 0 auto;
+    max-width: 1200px; /* Center the row and limit width */
+}
+
+/* Column Adjustments */
+.contact .col-md-6 {
+    flex: 1 1 calc(50% - 20px); /* Two equal columns */
+    max-width: calc(50% - 20px);
+}
+
+@media (max-width: 768px) {
+    /* Stacked Layout for Smaller Screens */
+    .contact .row {
+        flex-direction: column;
+    }
+
+    .contact .col-md-6 {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        max-width: 100%;
+    }
+
+    #contact {
+        padding: 20px;
+    }
+
+    input, textarea {
+        padding: 10px;
+    }
+
+    #contact button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .contact img {
+        max-height: 50vh;
+    }
+}
