@@ -1,5 +1,3 @@
-import React from "react";
-
 function handleScrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {

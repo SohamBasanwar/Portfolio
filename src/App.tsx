@@ -24,7 +24,6 @@ import './stylesheets/WavingBlob.css';
 import './stylesheets/credits.css';
 
 import Footer from "./components/Footer";
-import About from "./components/About";
 
 function App() {
     return (

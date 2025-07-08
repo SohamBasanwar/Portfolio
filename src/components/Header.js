@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {RiCloseFill, RiMenu3Fill, RiMenu4Fill} from "react-icons/ri";
+import {useState} from "react";
+import {RiMenu3Fill} from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import {Link} from "react-router-dom";
 
