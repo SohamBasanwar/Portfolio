@@ -1,7 +1,8 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaMailBulk } from "react-icons/fa";
 import {Link, useLocation} from "react-router-dom";
 
+const NAME = "Soham Basanwar"
 
 function Footer() {
 
@@ -13,13 +14,13 @@ function Footer() {
             <div className="footer-content">
                 <hr/>
                 <div className="social-icons d-flex justify-content-center">
-                    {/* Facebook */}
+                    {/* GitHub  */}
                     <a
-                        href="https://www.facebook.com/share/1D95HaQjnA/"
+                        href="https://github.com/SohamBasanwar"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaFacebook className="footer-icons"/>
+                        <FaGithub  className="footer-icons"/>
                     </a>
                     {/* Instagram */}
                     <a
@@ -35,7 +36,7 @@ function Footer() {
                     </a>
                     {/* LinkedIn */}
                     <a
-                        href="https://www.linkedin.com/in/soham-basanwar-7750a7244"
+                        href="https://www.linkedin.com/in/sohambasanwar"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -46,7 +47,7 @@ function Footer() {
                     <hr/>
                     <p>Designed & Developed By</p>
                     <div className="author-details">
-                        <span>Soham Basanwar</span>
+                        <span>{NAME}</span>
                         <span className="separator">|</span>
                         <Link to="/credits" className={`${path === "/credits" ? "active" : ""}`}>
                             View Credits

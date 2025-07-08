@@ -1,50 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 import { GiAchievement } from "react-icons/gi";
 import AchievementsData from "./AchievementsData";
 import handleScrollToSection from "../components/Scroll";
 
-
 function Achievements() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState("");
+
+    const openModal = (imgSrc) => {
+        setSelectedImage(imgSrc);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedImage("");
+        setIsModalOpen(false);
+    };
+
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="ach-bc">
-
                 <div className="contiainer ach-intro">
-
                     <div className="col-md-2 ach-icons-left">
-                        <GiAchievement color='white' size='180' className="rotation"/>
+                        <GiAchievement color="white" size="180" className="rotation" />
                     </div>
 
                     <div id="intro" className="col-md-7">
-
                         <h1 className="kaushan-script flex-with-center">ACHIEVEMENTS</h1>
-                        <hr/>
+                        <hr />
                         <p>Turning dreams into milestones, one achievement at a time.</p>
                         <button
                             className="primary-button font-bold"
                             onClick={() => handleScrollToSection("ach-list")}
-                        >Explore Projects
+                        >
+                            Explore Projects
                         </button>
-
-
                     </div>
 
                     <div className="col-md-2 ach-icons-right">
-
-                        <GiAchievement color='white' size='150' className="rotation"/>
+                        <GiAchievement color="white" size="150" className="rotation" />
                     </div>
-
-
                 </div>
-
             </div>
-
 
             <div id="ach-list" className="container ach-list">
                 <h3 className="font-bold montserrat-semibold mt-5">Take a look at My Achievements</h3>
-                <hr/>
+                <hr />
 
                 <div className="mt-5 mb-3">
                     {AchievementsData.map((achievements, index) => (
@@ -54,10 +57,20 @@ function Achievements() {
                             <div className="col-md-6 ach-img d-flex justify-content-center align-items-center">
                                 <img
                                     className="default-certificate-img"
-                                    src={achievements.img && achievements.img.trim() !== ""
-                                        ? achievements.img
-                                        : "/images/ComingSoon.png"}
+                                    src={
+                                        achievements.img && achievements.img.trim() !== ""
+                                            ? achievements.img
+                                            : "/images/ComingSoon.png"
+                                    }
                                     alt={achievements.title || "Achievement Image"}
+                                    onClick={() =>
+                                        openModal(
+                                            achievements.img && achievements.img.trim() !== ""
+                                                ? achievements.img
+                                                : "/images/ComingSoon.png"
+                                        )
+                                    }
+                                    style={{ cursor: "pointer" }} // Make the image clickable
                                 />
                             </div>
 
@@ -70,8 +83,17 @@ function Achievements() {
                 </div>
             </div>
 
+            {/* Modal for expanded image */}
+            {isModalOpen && (
+                <div className="modal-overlay" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <img src={selectedImage} alt="Expanded" className="expanded-image" />
+                    </div>
+                </div>
+            )}
+
         </div>
-    )
+    );
 }
 
-export default Achievements
+export default Achievements;

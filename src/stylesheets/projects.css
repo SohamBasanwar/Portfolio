@@ -14,19 +14,24 @@
     overflow: hidden;
 }
 
-.project {
-    padding: 15px;
-    border: 1px solid black;
-    border-radius: 10px;
+.project-list .row {
+  display: flex;            
+  flex-wrap: wrap;          
+  margin: 0;              
+}
 
+.project {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;        
 }
 
 .project img {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-
 }
+
 
 .project-content {
     position: absolute;

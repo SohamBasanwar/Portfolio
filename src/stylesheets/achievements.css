@@ -104,6 +104,41 @@
     line-height: 1.6;
 }
 
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none; /* Remove background color */
+    box-shadow: none; /* Remove shadow */
+    max-width: clamp(300px, 80%, 90vw); /* Flexible content size */
+    max-height: clamp(300px, 80%, 90vh);
+}
+
+.expanded-image {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 10rem); /* Subtract space for overlay */
+    object-fit: contain; /* Maintain aspect ratio */
+    border: none; /* Remove black border */
+    border-radius: 15px; /* Optional rounded corners */
+    background: none; /* Ensure no background for the image itself */
+}
+
+
+
 /* Achievements Animation */
 @keyframes achievements {
     0% {

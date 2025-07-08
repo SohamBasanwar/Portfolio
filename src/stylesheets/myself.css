@@ -7,6 +7,14 @@
     margin: clamp(20px, 5vw, 30px) 0; /* Dynamic margins */
 }
 
+.blob-container.myself .blob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* center text inside */
+  padding: 1rem;      /* optional: give breathing room */
+}
+
 .myself-header {
     margin-top: clamp(50px, 10vw, 100px); /* Dynamic top margin */
     margin-bottom: clamp(30px, 5vw, 70px); /* Dynamic bottom margin */

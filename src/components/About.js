@@ -1,5 +1,13 @@
 import React from "react";
 
+const YEAR = "Sophomore";
+const UNIVERSITY = "University of Illinois Chicago (UIC)";
+const MAJOR = "Computer Science";
+const CONCENTRATION = "Software Engineering";
+const ABOUT_IMAGE = "/images/Combining.png";
+const ABOUT_IMAGE_ALT = "three students working together";
+const MAJOR_DESCRIPTION = "Computer Science is the study of computers, algorithms,and programming to solve problems and build software.";
+
 function About() {
     let div = (
         <div>
@@ -8,10 +16,9 @@ function About() {
                     <div className="col-md-8">
                         <div className="n-box2 about px-3 py-4">
                             <h2 className="font-bold">Nice To Meet You</h2>
-                            <br />
                             <p>
-                                I am a Sophomore in University of Illinois Chicago (UIC). <br />
-                                I am majoring in Computer science with a concentration in Software Engineering.
+                                I am a {YEAR} in {UNIVERSITY} (UIC). <br />
+                                I am majoring in {MAJOR} with a concentration in {CONCENTRATION}.
                             </p>
                         </div>
                     </div>
@@ -20,8 +27,8 @@ function About() {
                 <div className="row mt-5 justify-content-center">
                     <div className="col-md-12 about-image">
                         <img
-                            src="/images/Combining.png"
-                            alt="a image of 3 boys in row doing work."
+                            src={ABOUT_IMAGE}
+                            alt={ABOUT_IMAGE_ALT}
                             className=""
                         />
                     </div>
@@ -30,10 +37,7 @@ function About() {
                 <div className="row mt-5 justify-content-end">
                     <div className="col-md-offset-4 col-md-8">
                         <div className="n-box2 about px-3 py-4">
-                            <p>
-                                Computer Science is the study of computers, algorithms,
-                                and programming to solve problems and build software.
-                            </p>
+                            <p>{MAJOR_DESCRIPTION}</p>
                         </div>
                     </div>
                 </div>

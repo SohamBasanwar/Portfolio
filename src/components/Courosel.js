@@ -1,11 +1,7 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { FaBootstrap } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
-import { RiJavascriptFill } from "react-icons/ri";import { SiJulia } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { IoLogoCss3 } from "react-icons/io";
+import { FaReact, FaPython, FaJava } from "react-icons/fa";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiJulia, SiHtml5, SiC, SiCplusplus } from "react-icons/si";
 
 
 function Courosel() {
@@ -25,7 +21,7 @@ function Courosel() {
                     </span>
 
                     <span style={{'--i' : 3}}>
-                        <SiJulia/>
+                        <SiJulia />
                     </span>
 
                     <span style={{'--i' : 4}}>
@@ -33,11 +29,11 @@ function Courosel() {
                     </span>
 
                     <span style={{'--i' : 5}}>
-                        <IoLogoCss3 color="blue"/>
+                        <SiC color="#A8B9CC"/>
                     </span>
 
                     <span style={{'--i' : 6}}>
-                        <FaBootstrap color="Blue"/>
+                        <SiCplusplus color="#00599C"/>
                     </span>
 
                     <span style={{'--i' : 7}}>

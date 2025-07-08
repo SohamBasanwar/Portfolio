@@ -47,14 +47,14 @@ function Projects() {
             </div>
 
 
-            <div id="project-list" className="container project-list">
+            <div id="project-list" className="container-fluid project-list">
                 <h3 className="font-bold montserrat-semibold">Take a look at My Projects</h3>
                 <hr/>
 
                 <div className="row flex-with-center mt-5 mb-3">
 
                     {projectsData.map(project=> {
-                        return <div className="col-md-4">
+                        return <div className="col-md-4 col-sm-6 col-12 px-2 mb-4">
                             <div className="position-relative project mb-4">
 
                                 <img src={project.img} alt=""/>

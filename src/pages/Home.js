@@ -6,6 +6,9 @@ import Myself from "../components/Myself";
 import Waves from "../components/Waves";
 import handleScrollToSection from "../components/Scroll";
 
+const NAME = "Soham Basanwar";
+const UNIVERSITY = "University of Illinois Chicago";
+const ROLE = "Undergraduate Computer Science Student";
 
 function Home() {
     // @ts-ignore
@@ -29,27 +32,14 @@ function Home() {
                     {/*<h1 id="name" className="kaushan-script">SOHAM BASANWAR</h1>*/}
 
                     <div className="smoke-name kaushan-script flex-with-center">
-                        <span className="smoke-letter">S</span>
-                        <span className="smoke-letter">O</span>
-                        <span className="smoke-letter">H</span>
-                        <span className="smoke-letter">A</span>
-                        <span className="smoke-letter">M</span>
-                        <span className="smoke-letter"> </span> {/* Space between first and last name */}
-                        <span className="smoke-letter">B</span>
-                        <span className="smoke-letter">A</span>
-                        <span className="smoke-letter">S</span>
-                        <span className="smoke-letter">A</span>
-                        <span className="smoke-letter">N</span>
-                        <span className="smoke-letter">W</span>
-                        <span className="smoke-letter">A</span>
-                        <span className="smoke-letter">R</span>
+                        {NAME.split("").map((char, i) => (
+                        <span key={i} className="smoke-letter">{char}</span>
+                        ))}
                     </div>
-
 
                     <div className="row intro-content d-flex justify-content-between">
                         <div className="col-md-6">
-                            <p id="About">University of Illinois Chicago <br/> Undergraduate
-                                Computer Science Student</p>
+                            <p id="About">{UNIVERSITY} <br/> {ROLE}</p>
                         </div>
                         <div className="col-md-6 flex-with-center">
                             <button
