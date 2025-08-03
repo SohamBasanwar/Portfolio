@@ -39,12 +39,6 @@ Welcome to my personal portfolio website, built to showcase my technical project
 
 ---
 
-yaml
-Copy
-Edit
-
----
-
 ## 🚀 Getting Started Locally
 
 ```bash
@@ -66,10 +60,6 @@ Soham Basanwar
 📫 sohambasanwar03@gmail.com
 🌐 Portfolio
 🔗 LinkedIn
-
-yaml
-Copy
-Edit
 
 ---
 
