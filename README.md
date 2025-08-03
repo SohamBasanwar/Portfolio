@@ -39,24 +39,6 @@ Welcome to my personal portfolio website, built to showcase my technical project
 
 ---
 
-## 📂 Project Structure
-
-portfolio/
-├── public/
-│ └── index.html
-├── src/
-│ ├── components/
-│ │ ├── Navbar.js
-│ │ ├── ProjectCard.js
-│ │ └── Footer.js
-│ ├── assets/
-│ ├── App.js
-│ └── index.js
-├── package.json
-├── .gitignore
-├── README.md
-└── LICENSE
-
 yaml
 Copy
 Edit
