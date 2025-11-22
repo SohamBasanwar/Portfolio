@@ -67,7 +67,6 @@ Soham Basanwar
 
 ### ✅ `LICENSE` for Portfolio
 
-```text
 Copyright (c) 2025 Soham Basanwar
 
 All rights reserved.
