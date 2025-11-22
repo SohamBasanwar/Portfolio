@@ -48,6 +48,8 @@ npm install
 npm start
 The site will be available at http://localhost:3000.
 
+```
+
 🔒 License
 This project is not open-source.
 All rights reserved © 2025 Soham Basanwar.
